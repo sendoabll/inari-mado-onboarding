@@ -105,7 +105,7 @@ class Bordereau(EventSourcedAggregateRoot):
             self._apply(BordereauRolledBack(self.id, author_id))
       </code>
     </pre>
-    <textarea v-model="model" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your code here...">
+    <textarea v-model="model" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500">
 
     </textarea>
 
@@ -113,10 +113,12 @@ class Bordereau(EventSourcedAggregateRoot):
       Send
     </UiButton>
 
-    <img v-if="resultImagePath" :src="resultImagePath" width="100" class="m-2"/>
-    <span v-if="resultMessage" class="m-2">
-      {{ resultMessage }}
-    </span>
+    <div class="flex">
+      <img v-if="resultImagePath" :src="resultImagePath" width="100" class="m-2"/>
+      <span v-if="resultMessage" class="m-2">
+        {{ resultMessage }}
+      </span>
+    </div>
   </div>
 </template>
 

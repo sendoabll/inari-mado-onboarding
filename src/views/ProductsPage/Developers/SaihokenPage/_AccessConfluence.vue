@@ -4,18 +4,19 @@
       Open in an internet explorer, the page of confluence of your pod.<br>
       Once you get it, please copy it in the next texfield to check it:<br>
     </UiCodeblock>
-    <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" v-model="model"
+    <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" v-model="model"
     >
 
     <UiButton  @click="onsubmit" class="m-2">
       Send
     </UiButton>
-    <img v-if="resultImagePath" :src="resultImagePath" width="100" class="m-2"/>
-    <span v-if="resultMessage" class="m-2">
-      {{ resultMessage }}
-    </span>
-    
 
+    <div class="flex">
+      <img v-if="resultImagePath" :src="resultImagePath" width="100" class="m-2"/>
+      <span v-if="resultMessage" class="m-2">
+        {{ resultMessage }}
+      </span>
+    </div>
   </div>
 </template>
 

@@ -7,10 +7,13 @@
     <UiButton @click="onsubmit" class="m-2">
         Send
     </UiButton>
-    <img v-if="resultImagePath" :src="resultImagePath" width="100" class="m-2"/>
-    <span v-if="resultMessage" class="m-2">
-      {{ resultMessage }}
-    </span>
+    
+    <div class="flex">
+      <img v-if="resultImagePath" :src="resultImagePath" width="100" class="m-2"/>
+      <span v-if="resultMessage" class="m-2">
+        {{ resultMessage }}
+      </span>
+    </div>
   </div>
 </template>
 
