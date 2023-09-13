@@ -1,0 +1,51 @@
+<template>
+  <div class='w-full max-w-md mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+    <div class='max-w-md mx-auto'>
+      <div class='h-[236px]'
+        style='background-image:url(https://img.freepik.com/free-photo/pasta-spaghetti-with-shrimps-sauce_1220-5072.jpg?w=2000&t=st=1678041911~exp=1678042511~hmac=e4aa55e70f8c231d4d23832a611004f86eeb3b6ca067b3fa0c374ac78fe7aba6);background-size:cover;background-position:center'>
+      </div>
+      <div class='p-4 sm:p-6'>
+        <p class='font-bold text-gray-700 text-[22px] leading-7 mb-1'>{{ title }}</p>
+        <div class='flex flex-row'>
+          <p class='text-[17px] font-bold text-[#0FB478]'>{{ subtitle }}</p>
+        </div>
+        <p class='text-[#7C7C80] font-[15px] mt-6'>{{ description }}</p>
+
+
+        <div @click="$emit('click-cta')"
+          class='cursor-pointer block mt-10 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform bg-[#FFC933] rounded-[14px] hover:bg-[#FFC933DD] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+          {{ cta }}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'UiCard',
+
+  props: {
+    title: {
+      type: String,
+      default: '',
+    },
+    subtitle: {
+      type: String,
+      default: '',
+    },
+    description: {
+      type: String,
+      default: '',
+    },
+    cta: {
+      type: String,
+      default: 'View in detail',
+    },
+  },
+
+  emits: {
+    'click-cta': null
+  },
+}
+</script>
