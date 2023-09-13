@@ -6,7 +6,7 @@ import AreaPage from '@/views/AreaPage/index.vue'
 import DevelopersSaihokenPage from '@/views/ProductsPage/Developers/SaihokenPage/index.vue'
 
 const routes = [
-  { path: '/', name:'root', component: HomePage },
+  { path: '/', name:'root', component: AreaListPage },
   { path: '/areas', name:'areas', component: AreaListPage },
   { path: '/area/:id', name:'area', component: AreaPage, props: true },
   { path: '/area/:id/:project', name:'area.project', component: DevelopersSaihokenPage, props: true },

@@ -1,8 +1,8 @@
 <template>
-  <UiSectionHeader title="Backoffice" />
+  <UiSectionHeader title="Tech" />
 
   <div class="grid grid-cols-3 gap-2">
-    <div class="m-4 bg-white shadow rounded flex items-center px-6 py-4 cursor-pointer hover:shadow-xl" v-for="card in cards.backoffice" @click="goToArea(card.id)">
+    <div class="m-4 bg-white shadow rounded flex items-center px-6 py-4 cursor-pointer hover:shadow-xl" v-for="card in cards.tech" @click="goToArea(card.id)">
       <component class="shadow rounded-full p-4 w-8" :size="24" :is="card.icon" />
       <div class="ml-8 flex-col">
         <div class="mb-2 font-bold">
@@ -17,10 +17,10 @@
 
   <div class="mt-8 mb-2"></div>
   
-  <UiSectionHeader title="Tech" />
+  <UiSectionHeader title="Backoffice" />
 
   <div class="grid grid-cols-3 gap-2">
-    <div class="m-4 bg-white shadow rounded flex items-center px-6 py-4 cursor-pointer hover:shadow-xl" v-for="card in cards.tech" @click="goToArea(card.id)">
+    <div class="m-4 bg-white shadow rounded flex items-center px-6 py-4 cursor-pointer hover:shadow-xl" v-for="card in cards.backoffice" @click="goToArea(card.id)">
       <component class="shadow rounded-full p-4 w-8" :size="24" :is="card.icon" />
       <div class="ml-8 flex-col">
         <div class="mb-2 font-bold">

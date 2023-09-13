@@ -1,11 +1,14 @@
 <template>
-  <li class="w-full">
-    <a class="min-w-min	md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline"
-      :href="url">
+  <div class="w-full">
+    <RouterLink 
+      class="min-w-min	md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline"
+      :to="{ name: url }">
+      <slot />
       {{ name }}
-    </a>
-  </li>
+  </RouterLink>
+  </div>
 </template>
+
 <script>
 export default {
   name: 'UiNavLink',

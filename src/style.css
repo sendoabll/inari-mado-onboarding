@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .material-design-icon, .material-design-icon__svg {
-  position: relative;
+  position: relative !important;
   height: auto !important;
   width: auto !important;
 }
