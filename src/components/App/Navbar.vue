@@ -13,7 +13,7 @@
           <AccountIcon class="cursor-pointer" />
         </div>
 
-        <div v-if="dropdownNavbar" class="absolute right-0 min-w-40 px-5 py-3 dark:bg-gray-800 bg-white rounded-lg shadow">
+        <div v-if="dropdownNavbar" class="absolute min-w-40 px-5 py-3 bg-white rounded-lg shadow">
           <div class="space-y-3">
             <UiNavLink url="areas" name="Mis datos" class="flex items-center">
               <FileDocumentIcon class="mr-3" />
@@ -27,7 +27,7 @@
               <MedalIcon class="mr-3" />
             </UiNavLink>
 
-            <hr class="dark:border-gray-700">
+            <hr class="border-gray-700">
 
             <UiNavLink url="areas" name="Logout" class="text-red-600 flex items-center">
               <LogoutIcon class="mr-3" />
