@@ -15,8 +15,6 @@
 </template>
 
 <script>
-import UiSection from '@/components/Ui/Section.vue'
-import UiCard from '@/components/Ui/Card.vue'
 import UiCodeblock from '@/components/Ui/Codeblock.vue'
 import UiButton from '@/components/Ui/Button.vue'
 
@@ -27,8 +25,6 @@ export default {
   name: 'SaihokenPageContentSection',
 
   components: {
-    UiSection,
-    UiCard,
     UiCodeblock,
     UiButton,
   },

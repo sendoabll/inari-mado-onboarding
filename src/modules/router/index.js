@@ -4,6 +4,7 @@ import MyExercisesPage from '@/views/MyExercisesPage/index.vue'
 import AreaListPage from '@/views/AreaListPage/index.vue'
 import AreaPage from '@/views/AreaPage/index.vue'
 import DevelopersSaihokenPage from '@/views/ProductsPage/Developers/SaihokenPage/index.vue'
+import RankingsPage from '@/views/RankingsPage/index.vue'
 
 
 const routes = [
@@ -12,6 +13,7 @@ const routes = [
   { path: '/area/:id', name:'area', component: AreaPage, props: true },
   { path: '/area/:id/:project', name:'area.project', component: DevelopersSaihokenPage, props: true },
   { path: '/myexercises', name:'myexercises', component: MyExercisesPage },
+  { path: '/rankings', name:'rankings', component: RankingsPage },
 ]
 
 export const router = createRouter({

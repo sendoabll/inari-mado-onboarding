@@ -13,9 +13,9 @@
           <AccountIcon class="cursor-pointer" />
         </div>
 
-        <div v-if="dropdownNavbar" class="absolute min-w-40 px-5 py-3 bg-white rounded-lg shadow">
+        <div v-if="dropdownNavbar" class="absolute min-w-40 w-full px-5 py-3 bg-white rounded-lg shadow">
           <div class="space-y-3">
-            <UiNavLink url="areas" name="Mis datos" class="flex items-center">
+            <UiNavLink url="root" name="Mis datos" class="flex items-center">
               <FileDocumentIcon class="mr-3" />
             </UiNavLink>
 
@@ -23,13 +23,13 @@
               <FormatListChecksIcon class="mr-3" />
             </UiNavLink>
 
-            <UiNavLink url="areas" name="Ranking" class="flex items-center">
+            <UiNavLink url="rankings" name="Ranking" class="flex items-center">
               <MedalIcon class="mr-3" />
             </UiNavLink>
 
             <hr class="border-gray-700">
 
-            <UiNavLink url="areas" name="Logout" class="text-red-600 flex items-center">
+            <UiNavLink url="root" name="Logout" class="text-red-600 flex items-center">
               <LogoutIcon class="mr-3" />
             </UiNavLink>
           </div>
