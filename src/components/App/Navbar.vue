@@ -8,7 +8,7 @@
         <div class="px-4 text-gradient border-b border-[#0c66ee]">
           John Doe
         </div>
-        <UiButton class="px-6 py-3 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white">
+        <UiButton>
           Logout
         </UiButton>
       </div>

@@ -1,15 +1,17 @@
 <template>
   <div class="w-full px-8">
-    <span>
-      This list of exercises if for new incoming members to the backend of Matsuri.<br>
-      Each exercise will be evaluated with passng the test and the time that the use takes to do it.<br>
-      Every time the user select the exercise the time will start counting, and the platform will take into account the exercise finished with the fewer time.
-    </span>
-    <pre v-highlightjs>
-      <code class="javascript">
-        const s = new Date().toString()
-      </code>
-    </pre>
+    <UiCodeblock class="m-2">
+      Open in an internet explorer, the page of confluence of your pod.<br>
+      Once you get it, please copy it in the next texfield to check it:<br>
+    </UiCodeblock>
+    <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" v-model="model"
+    >
+
+    <UiButton class="m-2">
+      Send
+    </UiButton>
+    
+
   </div>
 </template>
 
@@ -17,6 +19,7 @@
 import UiSection from '@/components/Ui/Section.vue'
 import UiCard from '@/components/Ui/Card.vue'
 import UiCodeblock from '@/components/Ui/Codeblock.vue'
+import UiButton from '@/components/Ui/Button.vue'
 
 export default {
   name: 'SaihokenPageContentSection',
@@ -25,10 +28,12 @@ export default {
     UiSection,
     UiCard,
     UiCodeblock,
+    UiButton,
   },
 
   data() {
     return {
+      model: "",
       cards: [
         { title: 'Saihoken', subtitle: 'Lorem ipsum', description: 'Long lorem ipsum', onClickCTA: () => this.$router.push({ name: 'products.developers.saihoken' }) },
         { title: 'Orca', subtitle: 'Lorem ipsum', description: 'Long lorem ipsum', onClickCTA: () => this.$router.push({ name: 'products.developers.saihoken' }) },

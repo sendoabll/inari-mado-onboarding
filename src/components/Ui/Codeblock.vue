@@ -2,14 +2,8 @@
   <div
     class="w-full font-mono text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
     <span class="flex-1 flex gap-4">
-      <span v-if="bash" class="shrink-0 text-gray-500">
-        $
-      </span>
-
       <span class="flex-1">
-        <span>
-          {{ code }}
-        </span>
+        <slot />
       </span>
     </span>
 
@@ -26,17 +20,6 @@
 <script>
 export default {
   name: 'UiCodeblock',
-
-  props: {
-    code: {
-      type: String,
-      default: ''
-    },
-    bash: {
-      type: Boolean,
-      default: true
-    },
-  },
 
   methods: {
     copyToClipboard () {
