@@ -9,9 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "highlight.js": "^11.8.0",
     "vue": "^3.3.4",
     "vue-material-design-icons": "^5.2.0",
-    "vue-router": "4"
+    "vue-router": "4",
+    "vue3-highlightjs": "^1.0.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

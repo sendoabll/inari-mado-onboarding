@@ -1,6 +1,12 @@
 <template>
   <div class="w-full px-8">
     <UiCodeblock code="composer require laravel/dusk" />
+    <pre v-highlightjs>
+      <code class="javascript">
+        const s = new Date().toString()
+      </code>
+    </pre>
+
   </div>
 </template>
 

@@ -1,5 +1,7 @@
 <template>
   <MainLayout>
+    <UiGoBack route="area" :params="{ id }" />
+    
     <div class="flex mt-8">
       <StepsSection class="w-3/12" @change-step="onChangeTab" />
 
@@ -12,6 +14,7 @@
 import MainLayout from '@/components/App/MainLayout.vue';
 import StepsSection from '@/views/ProductsPage/Developers/SaihokenPage/_StepsSection.vue';
 import IntroductionSection from '@/views/ProductsPage/Developers/SaihokenPage/_IntroductionSection.vue';
+import UiGoBack from '@/components/Ui/GoBack.vue'
 
 export default {
   name: 'ProductsPage',
@@ -20,6 +23,14 @@ export default {
     MainLayout,
     StepsSection,
     IntroductionSection,
+    UiGoBack,
+  },
+
+  props: {
+    id: {
+      type: String,
+      required: true
+    }
   },
 
   data () {
