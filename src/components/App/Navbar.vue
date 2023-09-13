@@ -19,7 +19,7 @@
               <FileDocumentIcon class="mr-3" />
             </UiNavLink>
 
-            <UiNavLink url="areas" name="Mis ejercicios" class="flex items-center">
+            <UiNavLink url="myexercises" name="Mis ejercicios" class="flex items-center">
               <FormatListChecksIcon class="mr-3" />
             </UiNavLink>
 
